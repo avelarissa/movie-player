@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+}
+
+.header {
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #F97EB0;
+    font-weight: bold;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+    background: #000;
+}
+
+video {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.hero {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) !important;
+    margin-top: -20px;
+    padding: 40px 50px 30px;
+    display: block;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0; 
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left; 
+    padding-left: 0px; 
+}
+
+.movie-info {
+    padding: 40px 50px;
+    background: #2b2b2b;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-item h3 {
+    color: #F97EB0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.info-item p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.inside-jokes {
+    padding: 30px 50px;
+    background: #1a1a1a;
+}
+
+.joke-comment {
+    padding: 15px;
+    background: #383838;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+.invitation-box {
+    text-align: center;
+    padding: 40px;
+    background: #F97EB0;
+    margin: 30px 50px;
+    border-radius: 10px;
+}
+
+.invitation-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.popcorn-emoji {
+    font-size: 3rem;
+    animation: bounce 2s infinite;
+}
+
+.watch-button {
+    background-color: #fff;
+    color: #F97EB0;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.add-list-button {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    video {
+        height: 50vh;
+    }
+
+    .hero {
+        margin-top: -30px;
+        padding: 30px 20px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .movie-info {
+        padding: 30px 20px;
+    }
+
+    .invitation-box {
+        margin: 30px 20px;
+    }
+
+    .invitation-text {
+        font-size: 1.2rem;
+    }
+}
