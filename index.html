@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍿 DATEFLIX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">DATEFLIX</div>
+    </header>
+
+    <div class="video-container">
+        <video id="ourMovie" controls poster="https://source.unsplash.com/1600x900/?movie-theater">
+            <source src="YOUR_VIDEO_NAME" type="video/mp4">
+           
+        </video>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Virtual Movie Night</h1>
+            <p class="hero-description">
+                Genre: Rom-Com(edy) | ⭐ Rating: 10/10 Would Watch Again<br>
+                Two stars navigate relentless buffering wheels in this gripping tale<br>
+                of digital odyssey. "Will their WiFi survive?" - The Streaming Times
+            </p>
+        </div>
+    </section>
+
+    <div class="movie-info">
+        <div class="info-grid">
+            <div class="info-item">
+                <h3>🌟 Starring</h3>
+                <p>Your name<br>Your love one as "The One Worth Buffering For"</p>
+            </div>
+            <div class="info-item">
+                <h3>🎥 Direction</h3>
+                <p>Your name<br>"Master of the Pause-Play Coordination"</p>
+            </div>
+            <div class="info-item">
+                <h3>📜 Script</h3>
+                <p>Your name<br>"Dialogue Mostly Consisting of 'Wait, my screen froze!'"</p>
+            </div>
+            <div class="info-item">
+                <h3>🏆 Awards</h3>
+                <p>Nominated for 3 Oscars:<br>
+                - Best WiFi Drama<br>
+                - Best Adapted Screenplay<br>
+                - Most Creative Use of Discord</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="inside-jokes">
+        <h2>🔥 Hot Takes from Fellow Viewers</h2>
+        <div class="joke-comment">
+            "That scene where the WiFi dropped? Thought it was game over for them! 😱<br>
+            - @MovieNightSurvivor
+        </div>
+        <div class="joke-comment">
+            "That Glorious 7 Minutes When Everything Worked! 🌟<br>
+            - @ShockedReviewer
+        </div>
+        <div class="joke-comment">
+            "Best part: When they both said 'Are you still there?' at the same time! 😂<br>
+            - @TelepathicDuoFan
+        </div>
+    </div>
+
+    <div class="invitation-box">
+        <div class="popcorn-emoji">🍿</div>
+        <p class="invitation-text">
+            So... wanna have a virtual movie night with me?<br>
+            You pick the movie, I'll handle the "3...2...1...PLAY!<br>
+            Our cross-state cinema awaits!
+        </p>
+        <button class="watch-button" onclick="showResponseButtons()">🎥 Click Here to RSVP</button>
+        <div id="responseButtons" style="display: none; margin-top: 20px;">
+            <button class="watch-button" onclick="respond('yes')">👍 "I'm In!"</button>
+            <button class="add-list-button" onclick="respond('maybe')">🤔 "Need to Check My Calendar"</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
